@@ -1,5 +1,7 @@
 # LRU-Cache-Visualizer
 LIVE DEMO LINK: https://harimurari27.github.io/LRU-Cache-Visualizer/
+
+
 An interactive and visually engaging web-based simulator to demonstrate how an **LRU (Least Recently Used) Cache** works — built with **HTML**, **CSS**, and **JavaScript**.
 
 ---
