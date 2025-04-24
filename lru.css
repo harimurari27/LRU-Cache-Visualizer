@@ -1,0 +1,226 @@
+/* 🌟 General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f7f8d2; /* Light Gray Background */
+    margin: 0;
+    padding: 0;
+    color: #2e2e2e; /* Dark Neutral Gray Text */
+}
+
+/* 📌 Container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    background: #ffffff; /* White */
+    border-radius: 16px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+    margin-top: 50px;
+    border: 2px solid #efe21f; /* Soft Gray Border */
+}
+
+/* 📌 Heading */
+h1 {
+    color: #34495e; /* Charcoal Blue */
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 8px 16px;
+    background: #4a90e2; /* Muted Blue */
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    color: #ffffff; /* White Text */
+    border: none;
+}
+
+/* 📌 Info Section */
+.info-section {
+    background: #f3f8fc; /* Soft Blue-Gray */
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.info-section h2 {
+    color: #4a90e2; /* Professional Blue */
+    font-size: 22px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-section h2::before {
+    content: "💡"; /* Lightbulb Emoji */
+    margin-right: 8px;
+}
+
+.info-section p {
+    font-size: 16px;
+    color: #666666; /* Neutral Gray */
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-section p::before {
+    content: "📝"; /* Note Emoji */
+    font-size: 20px; /* Adjusted Size */
+    margin-right: 8px;
+    color: #e67e22; /* Classy Orange */
+}
+
+/* 📌 Input Section */
+.input-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* 📌 Input Fields */
+input {
+    padding: 12px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    border: 2px solid #d6eaf8; /* Light Blue Border */
+    font-size: 16px;
+    transition: 0.3s;
+    background-color: #fafdff; /* Very Light Blue Background */
+    color: #34495e; /* Charcoal Text */
+}
+
+input:focus {
+    border-color: #5dade2; /* Muted Blue */
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(93, 173, 226, 0.5);
+}
+
+/* 📌 Buttons */
+button {
+    padding: 12px 18px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff; /* White Text */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Initialize Button */
+button:nth-child(1) {
+    background: #5dade2; /* Muted Blue */
+}
+
+button:nth-child(1):hover {
+    background: #2e86c1; /* Darker Muted Blue */
+    transform: scale(1.05);
+}
+
+/* Put Button */
+button:nth-child(2) {
+    background: #e67e22; /* Classy Orange */
+}
+
+button:nth-child(2):hover {
+    background: #d35400; /* Darker Orange */
+    transform: scale(1.05);
+}
+
+/* Get Button */
+button:nth-child(3) {
+    background: #69e10e; /* Refined Red */
+}
+
+button:nth-child(3):hover {
+    background: #189308; /* Darker Red */
+    transform: scale(1.05);
+}
+button#getButton {
+    background: orange; /* Orange */
+}
+
+button#getButton:hover {
+    background: rgb(208, 111, 7); /* Red */
+    transform: scale(1.05);
+}
+
+
+/* 📌 Cache Display */
+.cache-display {
+    margin-top: 20px;
+    padding: 20px;
+    background: #faefe3; /* Peach Background */
+    border-radius: 12px;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f1c40f; /* Golden Accent */
+}
+
+/* 📌 Cache Container */
+#cacheContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* 📌 Cache Items */
+.cache-item {
+    padding: 12px;
+    min-width: 60px;
+    background: #2ecc71; /* Professional Green */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.12);
+    animation: fadeIn 1s forwards, moveLeft 1.5s ease-in-out;
+}
+
+.cache-item::before {
+    content: "🔑"; /* Key Emoji */
+    margin-right: 8px;
+}
+
+/* 🔄 Keyframes for Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes moveLeft {
+    from { transform: translateX(30px); }
+    to { transform: translateX(0); }
+}
+
+/* 📌 Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
